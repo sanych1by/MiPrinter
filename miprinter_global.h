@@ -1,0 +1,12 @@
+#ifndef MIPRINTER_GLOBAL_H
+#define MIPRINTER_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MIPRINTER_LIBRARY)
+#  define MIPRINTERSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MIPRINTERSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MIPRINTER_GLOBAL_H
